@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3. 테이블태그</title>
+    </head>
+
+    <body>
+        <h3>3. 테이블태그</h3>
+
+        <h4>User 목록</h4>
+        <table border="1">
+            <caption>User 목록</caption>
+            <tr><!--table row-->
+                <th>아이디</th><!--table header-->
+                <th>이름</th>
+                <th>휴대폰</th>
+                <th>나이</th>
+            </tr>
+            <tr>
+                <td>a101</td><!--table data-->
+                <td>김춘추</td>
+                <td>010-1234-1001</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>a102</td>
+                <td>강감찬</td>
+                <td>010-1234-1002</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <th>a103</th>
+                <th>이순신</th>
+                <th>010-1234-1003</th>
+                <th>27</th>
+            </tr>
+            <tr>
+                <th>a104</th>
+                <th>장보고</th>
+                <th>010-1234-1004</th>
+                <th>29</th>
+            </tr>
+    
+
+
+        </table>
+
+        <h4>테이블 셀병합</h4>
+
+        <table border="1">
+            <tr>
+                <td colspan="2">2 * 1</td> <!--행병합-->
+                <td rowspan="2">2 * 3</td> <!--열병합-->
+                <td rowspan="3">2 * 4</td>
+                <td>2 * 5</td>
+            </tr>
+            <tr>
+                <td>3 * 1</td>
+                <td>3 * 2</td>
+                <td>3 * 5</td>
+            </tr>
+            <tr>
+                <td colspan="3">4 * 1</td>
+                <td>4 * 5</td>
+            </tr>
+            <tr>
+                <td>5 * 1</td>
+                <td>5 * 2</td>
+                <td>5 * 3</td>
+                <td>5 * 4</td>
+                <td>5 * 5</td>
+            </tr>
+            <tr>
+                <td>6 * 1</td>
+                <td>6 * 2</td>
+                <td>6 * 3</td>
+                <td>6 * 4</td>
+                <td>6 * 5</td>
+            </tr>
+        </table>
+
+
+    </body>
+    
+</html>

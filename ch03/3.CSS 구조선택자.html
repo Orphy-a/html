@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>3. CSS 구조선택자</title>
+        <!--
+            날짜 : 2025/01/21
+            이름 : 오재영
+            내용 : CSS 구조선택자 실습하기    
+        -->
+            <style>
+                /* 구조 선택자 */
+                #city > li:first-child{
+                    color: red;
+                }
+
+                #city > :nth-child(2) {
+                    color:green;
+                }
+
+                #city > :nth-child(4){
+                    color:blue
+                }
+                
+                #city > :last-child{
+                    color:violet
+                }
+                
+                #city > li:nth-of-type(1){
+                    background-color: yellow;
+                }
+                #city > em:nth-of-type(1){
+                    background-color: green;
+                }
+                
+                /* h3도 자식이라서 3 */
+                ul:nth-child(3) > li:nth-child(1){
+                    color: red;
+                }
+
+                
+                ul:nth-of-type(2) > li:nth-child(2){
+                    color: green;
+                }
+                
+                ul:nth-last-of-type(1) > li:nth-child(4){
+                    color:blue;
+                }
+
+
+
+            </style>
+    </head>
+    <BODY>
+        <h3>3. CSS 구조선택자</h3>
+        <ul id="city">
+            <li>서울</li>
+            <li>대전</li>
+            <li>대구</li>
+            <li>부산</li>
+            <li>광주</li>
+                <em>인천</em>
+                <em>울산</em>
+                <em>세종</em>
+        </ul>
+
+        <ul>
+            <li>한국</li>
+            <li>미국</li>
+            <li>일본</li>
+            <li>중국</li>
+            <li>호주</li>
+        </ul>
+
+    </BODY>
+
+
+</html>

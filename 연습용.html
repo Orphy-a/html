@@ -1,13 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>제목</title>
-    </head>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 예제</title>
+    <style>
+        /* 1. 요소 선택자 */
+        p { color: blue; }
 
-    <body>
-    <h1>가나다</h1>
-    
-    </body>
+        /* 2. 클래스 선택자 */
+        .highlight { background-color: yellow; }
 
+        /* 3. ID 선택자 */
+        #header { font-size: 24px; color: purple; }
+
+        /* 4. 자식 선택자 */
+        ul > li { list-style-type: square; }
+
+        /* 5. 하위 선택자 */
+        div > p { font-style: italic; }
+
+        /* 6. 인접 형제 선택자 */
+        h2 + p { font-weight: bold; }
+
+        /* 7. 일반 형제 선택자 */
+        h2 ~ p { margin-left: 20px; }
+
+        /* 8. 속성 선택자 */
+        input[type="text"] { border: 2px solid red; }
+
+        /* 9. 가상 클래스 선택자 */
+        a:hover { color: red; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1 id="header">CSS 선택자 예제</h1>
+
+    <p>이것은 일반 문단입니다. (요소 선택자)</p>
+
+    <p class="highlight">이 문단은 하이라이트 됩니다. (클래스 선택자)</p>
+
+    <div>
+        <ul>
+            <li>첫 번째 항목 (자식 선택자)</li>
+            <li>두 번째 항목</li>
+            <li>세 번째 항목</li>
+        </ul>
+        <p>이 문단은 div 안에 있습니다. (하위 선택자)</p>
+    </div>
+
+    <h2>제목</h2>
+    <p>이 문단은 h2 바로 다음에 옵니다. (인접 형제 선택자)</p>
+    <p>이 문단도 h2 뒤에 있습니다. (일반 형제 선택자)</p>
+
+    <input type="text" placeholder="텍스트 입력 (속성 선택자)">
+
+    <p><a href="#">이 링크에 마우스를 올려보세요 (가상 클래스 선택자)</a></p>
+</body>
 </html>

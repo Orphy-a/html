@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            font: normal 12px '돋움';
+        }
+
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+
+        #wrapper {
+            width: 100%;
+            height: 100%;            
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+
+        }
+
+        header > div{
+            width: 100%;
+        }
+
+        header .top > p {float: right; margin-top: 10px;}
+        
+
+        
+        header > div > *{
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+
+        header > div:nth-child(1){
+            width: 100%;
+            height: 36px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        header > div > div > p{
+            float: right;
+            margin-top: 10px;
+        }
+
+        header > div:nth-child(2){
+            width: 100%;
+            height: 100px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        header article{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+
+        header > div:nth-child(3){
+            width: 100%;
+            height: 46px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        main{
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 100%;
+            height: 352px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        .slider > article {
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        .go {
+            width: 100%;
+            height: 520px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        .go > article{
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        
+        .go > article > div{
+            border: 1px solid black;
+            box-sizing: border-box;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            
+        }
+
+        .go > article > div:nth-child(1){
+            width: 412px;
+            height: 450px;
+        }
+
+        .go > article > div:nth-child(2){
+            width: 322px;
+            height: 220px;
+        }
+
+        .go > article > div:nth-child(3){
+            width: 322px;
+            height: 220px;
+        }
+
+        .go > article > div:nth-child(4){
+            width: 322px;
+            height: 220px;
+        }
+
+        .go > article > div:nth-child(5){
+            width: 322px;
+            height: 220px;
+        }
+
+
+        .oneday {
+            width: 100%;
+            height: 190px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        .oneday > article{
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        .vegetable {
+            width: 100%;
+            height: 660px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        .vegetable > article{
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        .vegetable > article > li{
+            float: left;
+            width: 25%;
+            height: 50%;
+            border: 1px solid pink;
+            box-sizing: border-box;
+
+        }
+
+
+        .premium {
+            width: 100%;
+            height: 200px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        .premium > article{
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        .seafood {
+            width: 100%;
+            height: 660px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        .seafood > article{
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        .seafood > article > li{
+            float: left;
+            width: 25%;
+            height: 50%;
+            border: 1px solid pink;
+            box-sizing: border-box;
+            
+        }
+
+        
+        footer {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        footer > div{
+            width: 100%;
+            border: 1px solid green;
+            box-sizing: border-box;            
+        }
+
+        footer > div:nth-child(1){
+            width: 1100px;
+            height: 50px;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        footer > div:nth-child(2){
+            width: 1100px;
+            height: 156px;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="">
+            <div class="top">
+                <p>
+                    <a href="#">로그인 |</a>
+                    <a href="#"> 마이페이지 |</a>
+                    <a href="#"> 관심상품(0) |</a>
+                    <a href="#"> 장바구니(0)</a>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <article>
+                    <a href="#" class="shopping">
+                        <img src="images/ico_shopping.png" alt="주문조회 바로가기">
+                    </a>
+                </article>
+                <article>
+                    <a href="#" class="logo">
+                        <img src="images/header_txt_logo.png" alt="식자재전문쇼핑몰">
+                    </a>
+                </article>
+                <article>
+                    <a href="#" class="oneday_txt">
+                        <img src="images/oneday_txt.png" alt="원데이 번개장터">
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+            <article></article>
+        </section>
+        <section class="go">
+            <article>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+        </section>
+        <section class="oneday">
+            <article></article>
+        </section>
+        <section class="vegetable">
+            <article>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </article>
+        </section>
+        <section class="premium">
+            <article></article>
+        </section>
+        <section class="seafood">
+            <article>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+</html>

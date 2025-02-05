@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>foodshop layout</title>
+    
     <style>
-        
         * {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             font: normal 12px '돋움';
         }
 
@@ -17,7 +15,9 @@
 
         #wrapper {
             width: 100%;
-            height: 100%;            
+            height: 100%;
+            border: 1px solid red;
+            box-sizing: border-box;
         }
 
         header {
@@ -25,74 +25,56 @@
             height: auto;
             border: 1px solid blue;
             box-sizing: border-box;
-
         }
 
-        header > div{
+        header > div {
             width: 100%;
+            border: 1px solid green;
+            box-sizing: border-box;
         }
 
-        header .top > p {float: right; margin-top: 10px;}
-        
+        header > div:nth-child(1) {height: 36px;}
+        header > div:nth-child(2) {height: 100px;}
+        header > div:nth-child(3) {height: 54px;}
 
-        
-        header > div > *{
+        header > div > * {
             width: 1100px;
             height: 100%;
             border: 1px solid orange;
             box-sizing: border-box;
             margin: 0 auto;
         }
-        
 
-        header > div:nth-child(1){
-            width: 100%;
-            height: 36px;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
 
-        header > div > div > p{
-            float: right;
-            margin-top: 10px;
-        }
-
-        header > div:nth-child(2){
-            width: 100%;
-            height: 100px;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
-
-        header article{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
+        header article .shopping{
+            position: absolute;
+            left:10px;
+            bottom: 10px;
         }
 
 
-        header > div:nth-child(3){
-            width: 100%;
-            height: 46px;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
-
-        main{
+        main {
             width: 100%;
             height: auto;
             border: 1px solid blue;
             box-sizing: border-box;
         }
 
-        .slider {
+        main > section {
             width: 100%;
-            height: 352px;
+            height: auto;
             border: 1px solid green;
             box-sizing: border-box;
         }
 
-        .slider > article {
+        main > section:nth-child(1) {height: 352px;}
+        main > section:nth-child(2) {height: 520px;}
+        main > section:nth-child(3) {height: 190px;}
+        main > section:nth-child(4) {height: 660px;}
+        main > section:nth-child(5) {height: 200px;}
+        main > section:nth-child(6) {height: 660px;}
+
+        main > section > article {
             width: 1100px;
             height: 100%;
             border: 1px solid orange;
@@ -100,137 +82,64 @@
             margin: 0 auto;
         }
 
-        .go {
-            width: 100%;
-            height: 520px;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
-
-        .go > article{
-            width: 1100px;
-            height: 100%;
-            border: 1px solid orange;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-
+        main > .slider {}
         
-        .go > article > div{
-            border: 1px solid black;
+        main > .go {}
+
+        main > .go > article {
+            padding: 30px 10px;
             box-sizing: border-box;
+        }
+        main > .go div {
             float: left;
-            margin-left: 10px;
-            margin-top: 10px;
-            
+            border: 1px solid gray;
+            box-sizing: border-box;
         }
 
-        .go > article > div:nth-child(1){
-            width: 412px;
-            height: 450px;
-        }
-
-        .go > article > div:nth-child(2){
-            width: 322px;
-            height: 220px;
-        }
-
-        .go > article > div:nth-child(3){
-            width: 322px;
-            height: 220px;
-        }
-
-        .go > article > div:nth-child(4){
-            width: 322px;
-            height: 220px;
-        }
-
-        .go > article > div:nth-child(5){
-            width: 322px;
-            height: 220px;
-        }
+        main > .go div:nth-child(1) {width: 412px; height: 450px;}
+        main > .go div:nth-child(2) {width: 322px; height: 220px; margin-left: 11px;}
+        main > .go div:nth-child(3) {float:right; width: 322px; height: 220px;}
+        main > .go div:nth-child(4) {width: 322px; height: 220px; margin-left: 11px; margin-top: 10px;}
+        main > .go div:nth-child(5) {float:right; width: 322px; height: 220px; margin-top: 10px;}
 
 
-        .oneday {
+        main > .oneday {}
+
+        main > .vegetable {}
+        main > .vegetable > article {}
+        main > .vegetable ul {            
             width: 100%;
-            height: 190px;
-            border: 1px solid green;
+            height: 312px;
+            border: 1px solid gray;
             box-sizing: border-box;
+            overflow: hidden;
         }
-
-        .oneday > article{
-            width: 1100px;
-            height: 100%;
-            border: 1px solid orange;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-
-        .vegetable {
-            width: 100%;
-            height: 660px;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
-
-        .vegetable > article{
-            width: 1100px;
-            height: 100%;
-            border: 1px solid orange;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-
-        .vegetable > article > li{
+        main > .vegetable ul > li {
             float: left;
             width: 25%;
-            height: 50%;
+            height: 100%;
             border: 1px solid pink;
             box-sizing: border-box;
+        }        
 
-        }
-
-
-        .premium {
+        main > .premium {}
+        main > .seafood {}
+        main > .seafood > article {}
+        main > .seafood ul {            
             width: 100%;
-            height: 200px;
-            border: 1px solid green;
+            height: 312px;
+            border: 1px solid gray;
             box-sizing: border-box;
+            overflow: hidden;
         }
-
-        .premium > article{
-            width: 1100px;
-            height: 100%;
-            border: 1px solid orange;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-
-        .seafood {
-            width: 100%;
-            height: 660px;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
-
-        .seafood > article{
-            width: 1100px;
-            height: 100%;
-            border: 1px solid orange;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-
-        .seafood > article > li{
-            float: left;
+        main > .seafood ul > li {
+            float:left;
             width: 25%;
-            height: 50%;
+            height: 100%;
             border: 1px solid pink;
             box-sizing: border-box;
-            
-        }
+        }        
 
-        
         footer {
             width: 100%;
             height: auto;
@@ -238,105 +147,93 @@
             box-sizing: border-box;
         }
 
-        footer > div{
+        footer > div {
             width: 100%;
             border: 1px solid green;
             box-sizing: border-box;            
         }
 
-        footer > div:nth-child(1){
-            width: 1100px;
+        footer > div:nth-child(1) {
             height: 50px;
-            border: 1px solid orange;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-        footer > div:nth-child(2){
-            width: 1100px;
-            height: 156px;
-            border: 1px solid orange;
-            box-sizing: border-box;
-            margin: 0 auto;
         }
 
+        footer > div:nth-child(2) {
+            height: 156px;            
+        }
+
+        footer > div > div {
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
 
 
     </style>
+    
 </head>
 <body>
-    <header>
-        <div id="">
-            <div class="top">
-                <p>
-                    <a href="#">로그인 |</a>
-                    <a href="#"> 마이페이지 |</a>
-                    <a href="#"> 관심상품(0) |</a>
-                    <a href="#"> 장바구니(0)</a>
-                </p>
-            </div>
-        </div>
-        <div>
+    <div id="wrapper">
+        <header>
             <div>
-                <article>
-                    <a href="#" class="shopping">
-                        <img src="images/ico_shopping.png" alt="주문조회 바로가기">
-                    </a>
-                </article>
-                <article>
-                    <a href="#" class="logo">
-                        <img src="images/header_txt_logo.png" alt="식자재전문쇼핑몰">
-                    </a>
-                </article>
-                <article>
-                    <a href="#" class="oneday_txt">
-                        <img src="images/oneday_txt.png" alt="원데이 번개장터">
-                    </a>
-                </article>
+                <div></div>
             </div>
-        </div>
-        <div>
-            <div></div>
-        </div>
-    </header>
-    <main>
-        <section class="slider">
-            <article></article>
-        </section>
-        <section class="go">
-            <article>
+            <div>
+                <article></article>
+            </div>
+            <div>
+                <nav></nav>
+            </div>
+        </header>
+        <main>
+            <section class="slider">
+                <article></article>
+            </section>
+            <section class="go">
+                <article>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </article>
+            </section>
+            <section class="oneday">
+                <article></article>
+            </section>
+            <section class="vegetable">
+                <article>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="premium">
+                <article></article>
+            </section>
+            <section class="seafood">
+                <article>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div>
                 <div></div>
+            </div>
+            <div>
                 <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </article>
-        </section>
-        <section class="oneday">
-            <article></article>
-        </section>
-        <section class="vegetable">
-            <article>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </article>
-        </section>
-        <section class="premium">
-            <article></article>
-        </section>
-        <section class="seafood">
-            <article>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div></div>
-        <div></div>
-    </footer>
-</body>
-</html>
+            </div>
+        </footer>
+    </div>    
+
+</body></html>

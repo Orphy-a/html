@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>약관</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font: normal 12px '돋움';
+            
+        }
+        
+        a{
+            text-decoration: none;
+        }
+
+        #wrapper{
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        header{
+        }
+
+        main{
+            height: 700px;
+        }
+
+        footer{}
+        
+        header > h3{
+            width: 800px;
+            height: 35px;
+            margin: 0 auto;
+        }
+
+        header > h3 > .title{
+            position: absolute;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+
+        main > section{
+
+            width: 600px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 70px;     
+        }
+        
+        #user > section > div{
+            margin-left: 5px;
+        }
+
+        
+
+        #user > .terms > div > table{
+            margin-top: 5px;
+            border: 1px solid #e4eaec;
+            border-top: 2px solid #111;
+        }
+
+        #user > .terms > div > h2{
+            margin-top: 5px;
+        }
+
+        
+        #user > .terms > div > table label{
+            float: right;
+        }
+
+        #user textarea{
+            width: 580px;
+            height: 200px;
+            background: #f7f7f7;
+            border: 1px solid #e4eaec;
+            resize: none;
+            margin: 3px;
+        }
+
+        
+
+        .button{
+            float: right;
+            padding: 8px;
+            border: 1px solid #bebebe;
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        footer > section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 800px;
+            height: 35px;
+            color: gray;
+            margin: 0 auto;
+        }
+        
+        footer > section > span:nth-of-type(1){
+            float: left;
+        }
+
+        footer > section > span:nth-of-type(2){
+            float: right;
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h3>
+                <a href="/html-board/index.html" class="title">Board Project</a>
+            </h3>
+        </header>
+        
+        <main id="user">
+            <section class="terms">
+                <div>
+                    <h2>사이트 이용약관</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <textarea name="terms">약관내용</textarea><br>
+                                <label>
+                                    <input type="checkbox">동의합니다.
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>개인정보 취급방침</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <textarea name="terms">약관내용</textarea><br>
+                                <label>
+                                    <input type="checkbox">동의합니다.
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                    <div>
+                        <a href="/html-board/user/login.html" class="button Cancel">취소</a>
+                        <a href="/html-board/user/register.html" class="button Next">다음</a>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <span>Copyrightⓒ 오재영</span>
+                <span>v1.0.1</span>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

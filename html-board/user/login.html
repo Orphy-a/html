@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font: normal 12px '돋움';
+        }
+        
+        a{
+            text-decoration: none;
+        }
+
+        #wrapper{
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        header > h3{
+            width: 800px;
+            height: 35px;
+            margin: 0 auto;
+        }
+
+        header > h3 > .title{
+            position: absolute;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+
+        main > .login{
+            width: 800px;
+            height: 321px;
+            margin: 0 auto;
+        }
+
+        main > .login{
+            position: relative;
+            width: 360px;
+            height: auto;
+            border: 1px solid #cfded8;
+            box-sizing: border-box;
+            margin: 100px auto;
+        }
+
+        main > .login img{
+            width: 20px;
+            height: auto;
+
+        }
+
+
+
+        main > .login > form{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        main > .login > form > table input{
+            width: 162px;
+            height: 22px;
+            border: 1px solid #e4eaec;
+            margin-left: 5px;
+        }
+
+        main > .login > form > Button{
+            background: #fdfdfd;
+            border: 1px solid #bebebe;
+            width: 60px;
+            margin-left: 5px;
+        }
+
+        main .login > div{
+            width: 100%;
+            height: 116px;
+            margin-top: 30px;
+            background: #f5f6fa;
+        }
+
+        main .login > div > p{
+            margin-left: 20px;
+            padding-top: 20px;
+        }
+
+        main .login > div > .link{
+            float: right;
+            margin-right: 10px;
+        }
+
+        main .login > div > .link > a{
+            color: black;
+        }
+        
+
+        footer > section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 800px;
+            height: 35px;
+            color: gray;
+            margin: 0 auto;
+        }
+        
+        footer > section > span:nth-of-type(1){
+            float: left;
+        }
+
+        footer > section > span:nth-of-type(2){
+            float: right;
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h3>
+                <a href="/html-board/index.html" class="title">Board Project</a>
+            </h3>
+        </header>
+        
+        <main>
+            <section class="login">
+                <form action="#">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><img src="/html-board/images/login_ico_id.png" alt="id"></td>
+                                <td><input type="text" name="uid" placeholder="아이디 입력"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="/html-board/images/login_ico_pw.png" alt="pw"></td>
+                                <td><input type="text" name="pw" placeholder="비밀번호 입력"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button onclick='#'>로그인</button>
+                </form>
+                <div>
+                    <p>
+                        회원 로그인 안내<br><br>
+                        아직 회원이 아니시면 회원으로 가입하세요.
+                    </p>
+                    <br>
+                    <div class="link">
+                        <a href="#">아이디</a>
+                        <span> | </span>
+                        <a href="#">비밀번호찾기</a>
+                        <span> | </span>
+                        <a href="#">회원가입</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <span>Copyrightⓒ 오재영</span>
+                <span>v1.0.1</span>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

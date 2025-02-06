@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font: normal 12px '돋움';
+        }
+        
+        a{
+            text-decoration: none;
+        }
+
+        #wrapper{
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        header{}
+
+        main{
+            height: auto;
+        }
+
+        footer{}
+
+        main > section > form{
+            width: 600px;
+            height: auto;
+            margin: 60px auto;
+        }
+
+        main > section > form h2{
+            margin-top: 10px;
+        }
+
+        main > section > form > table{
+            width: 600px;
+            border-collapse: collapse;
+            border-top: 2px solid #111;
+            margin-top: 10px;
+        }
+
+        main > section > form > table >tbody{
+            border: 1px solid #e9e9e9;
+
+        }
+
+        main > section table tr > td{
+            padding:6px 12px;
+
+        }
+
+        main > section table tr > td:nth-of-type(1){
+            width: 105px;
+            background-color: #f5f8f9;
+        }
+
+        main > section table tr > td > input{
+            width: 170px;
+            height: 22px;
+            background: #f7f7f7;
+            border: 1px solid #e4eaec;
+            text-indent: 5px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+
+
+        main > section table tr:nth-of-type(5) > td > input:nth-of-type(2){
+            width: 445px;
+        }
+
+        main > section table tr:nth-of-type(5) > td > input:nth-of-type(3){
+            width: 445px;
+        }
+
+        main > section table button{
+            vertical-align: middle;
+            border: none;
+            margin-left: 3px;
+        }
+        
+
+
+
+        header > h3{
+            width: 800px;
+            height: 35px;
+            margin: 0 auto;
+        }
+
+        header > h3 > .title{
+            position: absolute;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+
+        .button{
+            float: right;
+            padding: 8px;
+            border: 1px solid #bebebe;
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 10px;
+            color: #111;
+        }
+
+        .button.Accession{
+            background: #ebebeb;
+        }
+
+
+        footer > section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 800px;
+            height: 35px;
+            color: gray;
+            margin: 0 auto;
+        }
+        
+        footer > section > span:nth-of-type(1){
+            float: left;
+        }
+
+        footer > section > span:nth-of-type(2){
+            float: right;
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h3>
+                <a href="/html-board/index.html" class="title">Board Project</a>
+            </h3>
+        </header>
+        
+        <main>
+            <section>
+                <form action="#">
+                    <h2>사이트 이용정보 입력</h2>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td>아이디</td>
+                                <td>
+                                    <input type="text" name="uid" placeholder="아이디 입력">
+                                    <button type="button">
+                                        <img src="/html-board/images/chk_id.gif" alt="중복확인">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>비밀번호</td>
+                                <td>
+                                    <input type="text" name="uid" placeholder="비밀번호 입력">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>비밀번호 확인</td>
+                                <td>
+                                    <input type="text" name="uid" placeholder="비밀번호 확인">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>개인정보 입력</h2>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td>이름</td>
+                                <td>
+                                    <input type="text" name="uid" placeholder="이름 입력">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>별명</td>
+                                <td>
+                                    <p>공백없는 한글, 영문, 숫자 입력</p>
+                                    <input type="text" name="uid" placeholder="별명 입력">
+                                    <button type="button">
+                                        <img src="/html-board/images/chk_id.gif" alt="중복확인">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>이메일</td>
+                                <td>
+                                    <input type="text" name="uid" placeholder="이메일 입력">
+                                    <button type="button">
+                                        <img src="/html-board/images/chk_auth.gif" alt="인증번호 받기">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>전화번호</td>
+                                <td>
+                                    <input type="text" name="uid" placeholder="전화번호 입력">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>주소</td>
+                                <td>
+                                    <input type="text" name="uid" placeholder="우편 번호">
+                                    <button type="button">
+                                        <img src="/html-board/images/chk_post.gif" alt="우편번호찾기">
+                                    </button>
+                                    <input type="text" name="uid" placeholder="주소 입력">
+                                    <input type="text" name="uid" placeholder="상세주소 입력">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <a href="/html-board/user/login.html" class="button Cancel">취소</a>
+                        <a href="#" class="button Accession">회원가입</a>
+                    </div>
+
+                </form>
+            </section>    
+        </main>
+        <footer>
+            <section>
+                <span>Copyrightⓒ 오재영</span>
+                <span>v1.0.1</span>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
